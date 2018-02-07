@@ -1,2 +1,2 @@
-# artgallery
-example gallery with category search
+# artshop
+example art shop with category search
