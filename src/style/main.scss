@@ -1,0 +1,43 @@
+@import 'normalize.css';
+@import "~bootstrap/scss/bootstrap";
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  @include media-breakpoint-up(xs) {
+    font-size: 15px;
+  }
+  @include media-breakpoint-up(sm) {
+    font-size: 16px;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 12px;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 14px;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 16px;
+  }
+}
+
+h2, p {
+  text-align: center;
+}
+
+.top-panel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.category {
+  background-color: red;
+}
+
+h3 {
+  display: inline-block;
+}
