@@ -15,29 +15,48 @@ html, body {
     font-size: 16px;
   }
   @include media-breakpoint-up(md) {
-    font-size: 12px;
-  }
-  @include media-breakpoint-up(lg) {
     font-size: 14px;
   }
-  @include media-breakpoint-up(xl) {
+  @include media-breakpoint-up(lg) {
     font-size: 16px;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 18px;
   }
 }
 
-h2, p {
-  text-align: center;
-}
+// h2, p {
+//   text-align: center;
+// }
 
+.header {
+  padding: 10px 20px;
+}
 .top-panel {
   display: flex;
   justify-content: space-between;
 }
 
-.category {
-  background-color: red;
+.categories {
+  padding: 20px;
+  background-color: #f8f9fa;
 }
 
-h3 {
-  display: inline-block;
+.category {
+  background-color: white;
+
+  &__title{
+    color: white;
+    background-color: #6c757d;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+  }
+}
+
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
 }
