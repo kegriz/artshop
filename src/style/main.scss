@@ -1,62 +1,74 @@
 @import 'normalize.css';
 @import "~bootstrap/scss/bootstrap";
+@import "inputs.scss";
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html, body {
-  font-family: 'Raleway', sans-serif;
-  font-size: 15px;
-  @include media-breakpoint-up(xs) {
-    font-size: 15px;
-  }
-  @include media-breakpoint-up(sm) {
-    font-size: 16px;
-  }
-  @include media-breakpoint-up(md) {
-    font-size: 14px;
-  }
-  @include media-breakpoint-up(lg) {
-    font-size: 16px;
-  }
-  @include media-breakpoint-up(xl) {
-    font-size: 18px;
-  }
+    font-family: 'Raleway', sans-serif;
+    @include media-breakpoint-up(xs) {
+        font-size: 14px;
+    }
+    @include media-breakpoint-up(sm) {
+        font-size: 16px;
+    }
+    @include media-breakpoint-up(md) {
+        font-size: 14px;
+    }
+    @include media-breakpoint-up(lg) {
+        font-size: 16px;
+    }
+    @include media-breakpoint-up(xl) {
+        font-size: 16px;
+    }
 }
-
-// h2, p {
-//   text-align: center;
-// }
 
 .header {
-  padding: 10px 20px;
+    padding: 10px 20px;
 }
-.top-panel {
-  display: flex;
-  justify-content: space-between;
+
+.brand {
+    display: flex;
+
+    img {
+        height: 2.3rem;
+        padding-right: 0.2rem;
+    }
+
+    h2 {
+        text-decoration: underline;
+        margin: 0;
+    }
 }
 
 .categories {
-  padding: 20px;
-  background-color: #f8f9fa;
+    padding: 20px;
+    background-color: #f8f9fa;
+    background: linear-gradient(#f8f9fa, white);
 }
 
 .category {
-  background-color: white;
+    background-color: white;
 
-  &__title{
-    color: white;
-    background-color: #6c757d;
-    width: 100%;
-    height: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px 5px 0 0;
-  }
+    &__title{
+        color: white;
+        background-color: #6c757d;
+        width: 100%;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px 5px 0 0;
+    }
+
+    &__content {
+        height: fit-content;
+        margin-bottom: 20px;
+    }
 }
 
 .box-shadow {
-  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
 }

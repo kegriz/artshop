@@ -1,0 +1,64 @@
+.search {
+    position:relative;
+    height: 2rem;
+    width: 18rem;
+
+    input {
+        font-size: 1.4rem;
+        width: 18rem;
+        height: 2.4rem;
+        text-align: right;
+
+        &:focus {
+            outline:none;
+        }
+
+        &[type=text] {
+            font-size: 1.2rem;
+            padding: 0 5px;
+            margin: 0;
+            border: none;
+            color: #666;
+        }
+    }
+
+    // label before click
+    label {
+        pointer-events:none;
+        color:#999;
+        font-size:1.4rem;
+        position:absolute;
+        right:5px;
+        top:5px;
+        transition:0.5s ease all;
+    }
+
+    // label "search" in input active state (moving left)
+    input:focus ~ label, input:valid ~ label {
+        right: 18rem;
+        opacity: 0;
+    }
+
+    // bar below input
+    .bar {
+        position: relative;
+        display: block;
+        width: 18rem;
+
+        &:before {
+            content:'';
+            height:2px;
+            width:0;
+            bottom:1px;
+            right: 0;
+            position:absolute;
+            background-color: lightgrey;
+            transition:0.2s ease all;
+        }
+    }
+
+    // bar active state */
+    input:focus ~ .bar:before {
+        width:100%;
+    }
+}

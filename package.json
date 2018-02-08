@@ -1,5 +1,5 @@
 {
-  "name": "artgallery",
+  "name": "ArtStore",
   "version": "1.0.0",
   "description": "example gallery with category search",
   "main": "",
@@ -9,17 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kegriz/artgallery.git"
+    "url": "git+https://github.com/kegriz/artshop.git"
   },
   "keywords": [
-    "artgallery"
+    "ArtStore"
   ],
   "author": "Rafał Rudko",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kegriz/artgallery/issues"
+    "url": "https://github.com/kegriz/artshop/issues"
   },
-  "homepage": "https://github.com/kegriz/artgallery#readme",
+  "homepage": "https://github.com/kegriz/artshop#readme",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
