@@ -12,7 +12,7 @@ html, body {
         font-size: 14px;
     }
     @include media-breakpoint-up(sm) {
-        font-size: 16px;
+        font-size: 14px;
     }
     @include media-breakpoint-up(md) {
         font-size: 14px;
@@ -23,6 +23,10 @@ html, body {
     @include media-breakpoint-up(xl) {
         font-size: 16px;
     }
+}
+
+p {
+  margin-bottom: 0.8rem;
 }
 
 .header {
@@ -53,6 +57,7 @@ html, body {
     background-color: white;
 
     &__title{
+        text-transform: capitalize;
         color: white;
         background-color: #6c757d;
         width: 100%;
