@@ -1,7 +1,7 @@
-# artshop
-example art shop with category and category content search
+# ArtStore
+Example art shop with category and category content search
 
-<a href="http://www.rafalrudko.com/artstore/">CLICK</a>
+<a target="new" href="http://www.rafalrudko.com/artstore/">WEBSITE</a>
 
 clone repo with GIT:
 $ git clone https://github.com/kegriz/artshop.git

@@ -11,7 +11,7 @@ $( () => {
         for (var i in data) {
             var links = "";
             for (var n in data[i]) {
-                links += "<a href='/'>"+data[i][n]+"</a>";
+                links += "<a href=''>"+data[i][n]+"</a>";
             }
             var element = '<div class="col-sm-6 col-md-6 col-lg-4"><div class="category box-shadow"><h3 class="category__title">'
             +i+'</h3><div class="category__content container-fluid">'+links+'</div></div></div>';
