@@ -11,7 +11,7 @@ $( () => {
         for (var i in data) {
             var links = "";
             for (var n in data[i]) {
-                links += "<p>"+data[i][n]+"</p>";
+                links += "<a href='/'>"+data[i][n]+"</a>";
             }
             var element = '<div class="col-sm-6 col-md-6 col-lg-4"><div class="category box-shadow"><h3 class="category__title">'
             +i+'</h3><div class="category__content container-fluid">'+links+'</div></div></div>';
@@ -25,7 +25,7 @@ $( () => {
         if(value=="") {
             $(".category__title").each( function() {
                 $( this ).parent().parent().fadeIn( "fast" );
-                $(this).parent().find(".category__content").children().css("background-color", "unset");
+                $(this).parent().find(".category__content").children().css("background-color", "transparent");
             });
         } else {
             $.each( $(".category__title"), function() {
@@ -38,15 +38,15 @@ $( () => {
                   var elementContain = element.indexOf(value);
                   if(elementContain!==-1) {
                       contentContain += 1;
-                      $( this ).css("background-color", "lightgrey");
+                      $( this ).css("background-color", "#f1f3f4");
                   } else {
-                      $( this ).css("background-color", "unset");
+                      $( this ).css("background-color", "transparent");
                   }
                 });
                 if(contain!==-1 || contentContain!==0) {
-                    $( this ).parent().parent().fadeIn( "fast" );
+                    $( this ).parent().parent().fadeIn( "slow" );
                 } else {
-                    $( this ).parent().parent().fadeOut( "fast" );
+                    $( this ).parent().parent().fadeOut( "slow" );
                 }
             });
         }

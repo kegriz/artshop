@@ -27,9 +27,14 @@ html, body {
     }
 }
 
-p {
-    margin-bottom: 0;
-    padding-bottom: 0.8rem;
+a {
+    display: block;
+    margin-bottom: 0.4rem;
+    padding: 0.2rem 0.4rem;
+    color: $black;
+    &:hover {
+      color: $black;
+    }
 }
 
 .header {
@@ -72,7 +77,8 @@ p {
     }
 
     &__content {
-        height: fit-content;
+        // height: fit-content;
+        padding-bottom: 0.4rem;
         margin-bottom: 20px;
     }
 }
